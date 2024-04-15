@@ -11,9 +11,7 @@ public class OpenBrowser {
 		
 		WebDriver driver = new ChromeDriver();//FirefoxDriver()  || EdgeDriver()
 		driver.get("https://keybooks.ro/");
-		
-		
-		
+	
 	}
 	
 	
