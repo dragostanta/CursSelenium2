@@ -57,6 +57,13 @@ public class RelativeLocatorsExample extends BaseTest{
 		jse.executeScript("arguments[0].setAttribute"
 				+ "('style', 'background: grey;border:6px solid black;')",authorAllanGreen );
 		
+		//near
+		WebElement authorRichardMann =  driver.findElement(
+				RelativeLocator.with(By.cssSelector("div[class='wpb_wrapper']>p"))
+				.near(By.cssSelector("img[src*='books7']"), 250));
+		
+		jse.executeScript("arguments[0].setAttribute"
+				+ "('style', 'background: purple;border:6px solid yellow;')",authorRichardMann );
 		
 	}
 	
